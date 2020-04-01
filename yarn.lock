@@ -960,11 +960,28 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@urql/core@^1.10.5":
+"@urql/core@>=1.10.4", "@urql/core@>=1.10.5", "@urql/core@^1.10.5", "@urql/core@^1.10.7":
   version "1.10.7"
   resolved "https://registry.yarnpkg.com/@urql/core/-/core-1.10.7.tgz#4632088a9abd5884e08726242261ea39d3cdda40"
   integrity sha512-KOeX6TpU0ui7WDaP3ZgXJnRRPbjPz31jECYixgc+vxo7rQVVFkRkB7qzfusYzeCYAruMz7vzoOPT22UTxKcU/g==
   dependencies:
+    wonka "^4.0.9"
+
+"@urql/exchange-graphcache@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@urql/exchange-graphcache/-/exchange-graphcache-2.3.0.tgz#dcc5978e5288a67470c9b2661778815f403eb2ce"
+  integrity sha512-JW7ADJFdoaER73B8YhEYs+KPltvs/rreLEP5Ql8tUf8OnXVeP6bnJWFYx3eDGUplaPAByiLVEcDD4Bjtt+Xi8Q==
+  dependencies:
+    "@urql/core" ">=1.10.5"
+    "@urql/exchange-populate" ">=0.1.3"
+    wonka "^4.0.9"
+
+"@urql/exchange-populate@>=0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@urql/exchange-populate/-/exchange-populate-0.1.3.tgz#887aa78e802f306f53c5a82f77acb431f3e3eda7"
+  integrity sha512-P7798cncS/8Q4ko1SlfToklq7K7HzHNE38LzlCTLjFtrecnxJ1oedP+QjrYixndeT+hwnUgwllF6vR7sh1/R4Q==
+  dependencies:
+    "@urql/core" ">=1.10.4"
     wonka "^4.0.9"
 
 "@webassemblyjs/ast@1.8.5":
