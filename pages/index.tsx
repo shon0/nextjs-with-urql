@@ -24,7 +24,7 @@ const queryPokemon = gql`
   }
 `;
 
-type Result = {
+type Data = {
   pokemons: {
     id: string;
     name: string;
@@ -34,7 +34,7 @@ type Result = {
 };
 
 const Index = () => {
-  const [result] = useQuery<Result>({
+  const [result] = useQuery<Data>({
     query: queryPokemon,
     variables: { first: 9 }
   });
