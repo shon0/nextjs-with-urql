@@ -967,6 +967,13 @@
   dependencies:
     wonka "^4.0.9"
 
+"@urql/devtools@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@urql/devtools/-/devtools-0.1.2.tgz#0fb30ec45d7486f18435ec511b1aaa6ccfa7cb0c"
+  integrity sha512-JoQlxFmWPxpuvi8nstjLNRhp1sScNZNo3WiMw8f5PLFFApeUvf3Wa4nDK/zIxNZKd6eOzAyeSLy0RQ6+iVvYGQ==
+  dependencies:
+    wonka "^3.2.1"
+
 "@urql/exchange-graphcache@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@urql/exchange-graphcache/-/exchange-graphcache-2.3.0.tgz#dcc5978e5288a67470c9b2661778815f403eb2ce"
@@ -5958,6 +5965,11 @@ whatwg-fetch@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
   integrity sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
+
+wonka@^3.2.1:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/wonka/-/wonka-3.2.2.tgz#4d5c79fee2e6042066ba7aa86bd2f180487cc0c3"
+  integrity sha512-btmYyFDuDpJXJfELkFkoTjfyn0M+/a54/kjqt3qGN/h/90A8Ynq8qxG4b0uXBAOvJNRnWnL8+d0C3r6Clt8PYA==
 
 wonka@^4.0.9:
   version "4.0.9"

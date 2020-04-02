@@ -1,6 +1,7 @@
 import React from "react";
 import { dedupExchange, fetchExchange } from "@urql/core";
 import { cacheExchange } from "@urql/exchange-graphcache";
+import { devtoolsExchange } from "@urql/devtools";
 import { withUrqlClient, SSRExchange } from "next-urql";
 import { useQuery } from "urql";
 import gql from "graphql-tag";
@@ -8,6 +9,7 @@ import "isomorphic-unfetch";
 
 const mergeExchanges = (ssrExchange: SSRExchange) => [
   dedupExchange,
+  devtoolsExchange,
   cacheExchange({}),
   ssrExchange,
   fetchExchange
