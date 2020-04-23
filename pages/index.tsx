@@ -38,7 +38,7 @@ type Data = {
 const Index = () => {
   const [result] = useQuery<Data>({
     query: queryPokemon,
-    variables: { first: 9 }
+    variables: { first: 25 }
   });
 
   if (result.fetching) return <div>loading...</div>;
