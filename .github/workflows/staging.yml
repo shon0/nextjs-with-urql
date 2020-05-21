@@ -24,9 +24,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git fetch --depth=1 origin master
+          git fetch origin master
           git merge origin/master
-          # git commit --allow-empty -m "Deploy staging"
       - name: Push to staging
         uses: ad-m/github-push-action@master
         with:
