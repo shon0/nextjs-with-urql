@@ -14,6 +14,6 @@ jobs:
           zeit-token: ${{ secrets.ZEIT_TOKEN }} # Required
           github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
           now-args: "--prod" #Optional
-          now-org-id: ${{ secrets.ORG_ID}} #Required
-          now-project-id: ${{ secrets.PROJECT_ID}} #Required
+          now-org-id: ${{ secrets.ZEIT_ORG_ID}} #Required
+          now-project-id: ${{ secrets.ZEIT_PROJECT_ID}} #Required
           working-directory: ./sub-directory
