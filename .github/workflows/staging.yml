@@ -6,7 +6,7 @@ name: copy master to staging
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -18,12 +18,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@master
+        with:
+          ref: origin/staging
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git branch
-          git checkout staging origin/staging
           git merge origin/master
           # git commit --allow-empty -m "Deploy staging"
       - name: Push to staging
