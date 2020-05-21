@@ -18,11 +18,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@master
+        with:
+          repository: 'staging'
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit --allow-empty -m "Deploy staging"
+          git merge origin/master
+          # git commit --allow-empty -m "Deploy staging"
       - name: Push to staging
         uses: ad-m/github-push-action@master
         with:
