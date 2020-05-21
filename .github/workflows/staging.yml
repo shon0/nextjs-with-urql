@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
         with:
-          ref: origin/staging
+          ref: staging
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
