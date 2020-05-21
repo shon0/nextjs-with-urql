@@ -12,7 +12,7 @@ const mergeExchanges = (ssrExchange: SSRExchange) => [
   devtoolsExchange,
   cacheExchange({}),
   ssrExchange,
-  fetchExchange
+  fetchExchange,
 ];
 
 const queryPokemon = gql`
@@ -38,7 +38,7 @@ type Data = {
 const Index = () => {
   const [result] = useQuery<Data>({
     query: queryPokemon,
-    variables: { first: 9 }
+    variables: { first: 9 },
   });
 
   if (result.fetching) return <div>loading...</div>;
@@ -46,7 +46,8 @@ const Index = () => {
 
   return (
     <div>
-      {result.data.pokemons.map(p => (
+      {process.env.NEXT_PUBLIC_TEST || "I don't have env"}
+      {result.data.pokemons.map((p) => (
         <div key={p.id}>
           <h3>{p.name}</h3>
           <div>{p.types.join(" / ")}</div>
