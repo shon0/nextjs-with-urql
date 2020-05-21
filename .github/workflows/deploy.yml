@@ -16,4 +16,4 @@ jobs:
           now-args: "--prod" #Optional
           now-org-id: ${{ secrets.ZEIT_ORG_ID}} #Required
           now-project-id: ${{ secrets.ZEIT_PROJECT_ID}} #Required
-          working-directory: ./sub-directory
+          # working-directory: ./sub-directory
