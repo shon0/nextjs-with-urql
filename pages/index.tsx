@@ -46,6 +46,7 @@ const Index = () => {
 
   return (
     <div>
+      Hello!!
       {process.env.NEXT_PUBLIC_TEST || "I don't have env"}
       {result.data.pokemons.map((p) => (
         <div key={p.id}>
